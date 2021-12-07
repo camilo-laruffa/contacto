@@ -87,8 +87,6 @@ a:hover {
     align-items: center;
     padding: 1rem;
 
-    width: min(78rem, 100%);
-    height: min(27rem, 100%);
     border-radius: 5px;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgb(241, 241, 241) 47%, rgb(236, 236, 236) 100%);
 
@@ -96,6 +94,8 @@ a:hover {
     top: 50%;
     left: 50%;   
     transform: translate(-50%, -50%); 
+
+    width: 76rem;
 }
 
 .contacto {
@@ -103,15 +103,19 @@ a:hover {
     justify-content: space-between;
 }
 
-.contacto img{
-    margin-top: 0.7rem;
-    margin-right: 0.7rem;
+.link {
+    display: flex;
 }
 
 @media (max-width: 768px) {
+    .card {
+        width: 100%;
+        text-align: center;
+    }
     .contacto {
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
+    
 }
