@@ -1,0 +1,117 @@
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    min-height: 100%;    
+    background: linear-gradient(to bottom, rgb(189, 242, 255) 0%, rgb(118, 223, 255) 47%, rgb(4, 205, 255) 100%);
+    font-family: 'Varela Round', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+span {
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+a {    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 2rem;
+}
+a:visited,:link{
+    text-decoration: none;
+    color: #212121;
+    font-size: 1.8rem;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+.fade-in {
+    animation: fadeIn 4s;
+}
+
+.chiquito {
+    margin: auto 0 auto 0;
+    width: 36px;
+    height: 26px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.shadow {
+    -webkit-box-shadow: -1px 13px 29px -10px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: -1px 13px 29px -10px rgba(0, 0, 0, 0.53);
+    box-shadow: -1px 13px 29px -10px rgba(0, 0, 0, 0.53);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    width: min(78rem, 100%);
+    height: min(27rem, 100%);
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgb(241, 241, 241) 47%, rgb(236, 236, 236) 100%);
+
+    position: fixed;
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%); 
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto img{
+    margin-top: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
